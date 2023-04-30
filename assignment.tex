@@ -1,3 +1,4 @@
+
 \documentclass[journal,12pt,two column]{IEEEtran}
 %\usepackage{setspace}
 \usepackage{listings}
@@ -26,7 +27,6 @@
 
 \title{A1110 Assignment 1 \\ 11.16.3.16}
 \author{K.SaiTeja \\ AI22BTECH11014}
-\begin{document}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
 \providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
@@ -44,27 +44,22 @@
 \renewcommand{\thetable}{\arabic{table}} 
 \newcommand{\question}{\noindent \textbf{Question: }}	
 \newcommand{\solution}{\noindent \textbf{Solution: }}
+\begin{document}
 \maketitle
 \question: 16 : Events E and F are such that P(Not E or not F)=0.25, State whether E and F are mutually exclusive.\\
 \solution :\\
-As given in the question ;\\
-\begin{align}
-	\pr{E^\prime+ F^\prime}=0.25
-\end{align}
-
-$$\pr{E^\prime+ F^\prime}= \Pr{(EF)}^\prime \\$$	
-$$\implies 1-\pr{EF}=0.25$$ 
-\begin{align}
-	\implies \pr{EF}=0.75
-\end{align}
-
-	$$\because \pr{EF}\neq 0$$ \\
-
+As given in the question ;
+ \begin{align} 
+	\pr{E^\prime+ F^\prime}&=0.25 \\
+	\pr{E^\prime+ F^\prime}&= \pr{EF}^\prime \\
+ 	\implies 1-\pr{EF}&=0.25 \\
+	\implies \pr{EF}&=0.75 
+ \end{align}
+	$$\because \pr{EF}\neq 0$$\\
 		As, the condition of mutually exclusive is 
 
-	$$\pr{EF}=\emptyset$$ \\
-
-$\therefore$ E and F are not mutually exclusive events.
+	$$\pr{EF}=\emptyset$$ 
+\begin{center}$\therefore$ E and F are not mutually exclusive events.\end{center}
 
 
 
