@@ -114,8 +114,7 @@ Consider the experiment of throwing a die.
         \item If any other number comes, toss a coin.
     \end{itemize}
      Find the conditional probability of the event \lq the coin shows a tail\rq, given that \lq at least one die shows a 3\rq.\\
-\solution
-\tableofcontents
+\solution\tableofcontents
 \section{Markov Chain States}
 \begin{itemize}
     \item  Let us construct a Markov chain $X_t$ with discrete time t.
@@ -154,7 +153,11 @@ Let $ Y \in \cbrak{1,2,3,4,5,6} $ denote the number obtained from a die throw.
     Let $\prt{i}{t}$ be the probability of state i at time t. 
     Then the state vector is,   
     \begin{align}
-        \vec{Q_t} &= \myvec{\prt{0}{t} & \prt{1}{t} & \prt{2}{t} & \prt{3}{t} & \prt{4}{t} }
+        \vec{Q_t} &= \myvec{\prt{0}{t}\\ 
+        			        \prt{1}{t} \\
+        			        \prt{2}{t} \\
+        			        \prt{3}{t} \\
+        			        \prt{4}{t} }
     \end{align}    
     The probabilities after one step in time are
     \begin{align}
@@ -169,10 +172,10 @@ Let $ Y \in \cbrak{1,2,3,4,5,6} $ denote the number obtained from a die throw.
 
     The previous equations can be summarized as
     \begin{align}
-        \vec{Q_{t+1}} &= \vec{Q_t} \vec{P}  
-        \label{eq:transtition}
+        \vec{Q_{t+1}} &= \vec{P}\vec{Q_t} 
+        \label{eq:transtition}        
     \end{align}
-    Where $\vec{P}$ is the transition probability matrix. Its elements are values of $p_{j/i}$
+    Where $\vec{P}$ is the transition probability matrix. Its elements are values of $p_{i/j}$
     \begin{align}
         \vec{P}= \myvec{\input{tables/table2.txt}} 
     \end{align}
@@ -181,16 +184,16 @@ Let $ Y \in \cbrak{1,2,3,4,5,6} $ denote the number obtained from a die throw.
 \textbf{Initial Condition}
      The given condition is that \lq3 occurs at least once\rq. Let the first occurrence of 3 be the initial state $ \vec{Q_0}$.
     \begin{align}
-        \vec{Q_0} &= \myvec{1 & 0 & 0 & 0 & 0} 
+        \vec{Q_0} &= \myvec{ 1 \\ 0 \\ 0 \\ 0 \\ 0 } 
     \end{align}
     Using equation \eqref{eq:transtition}, further states can be generated.
     \begin{align}
-        \vec{Q_1} &= \vec{Q_{0}} \vec{P}
-            = \myvec{\frac{1}{6} & \frac{1}{6} & \frac{4}{6} & 0 & 0}\\
-        \vec{Q_2} &=  \vec{Q_1} \vec{P} =\vec{Q_0} \vec{P}^{2}
-            = \myvec{\frac{1}{18} & \frac{1}{18} & \frac{2}{9} & \frac{1}{3} & \frac{1}{3}}\\   
+        \vec{Q_1} &= \vec{P} \vec{Q_{0}}
+            = \myvec{\frac{1}{6} \\ \frac{1}{6}  \\ \frac{4}{6} \\ 0 \\ 0}\\
+        \vec{Q_2} &= \vec{P} \vec{Q_1} = \vec{P}^{2} \vec{Q_0} 
+            = \myvec{\frac{1}{18} \\ \frac{1}{18} \\ \frac{2}{9} \\\frac{1}{3} \\ \frac{1}{3}}\\   
         \vdots \\
-        \vec{Q_t} &= \vec{Q_0} \vec{P}^{t}  
+        \vec{Q_t} &= \vec{P}^{t} \vec{Q_0}
     \end{align}
 \textbf{Limiting Probabilities of States}
     These can can be approximately calculated by taking large value of t,
