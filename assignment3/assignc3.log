@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  10 MAY 2023 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  11 MAY 2023 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,7 +793,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Missing character: There is no / in font nullfont!
 Missing character: There is no / in font nullfont!
 (./graph/graph1.txt)
-Overfull \hbox (80.12164pt too wide) in paragraph at lines 137--138
+Overfull \hbox (65.89526pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
@@ -804,13 +804,13 @@ Overfull \hbox (80.12164pt too wide) in paragraph at lines 137--138
 (./tables/table2.txt) (./tables/table3.txt) (./tables/table3.txt) [2]
 (./assignc3.aux) ) 
 Here is how much of TeX's memory you used:
- 19068 strings out of 478287
- 370212 string characters out of 5849289
- 646690 words of memory out of 5000000
- 36898 multiletter control sequences out of 15000+600000
+ 19055 strings out of 478287
+ 370017 string characters out of 5849289
+ 641690 words of memory out of 5000000
+ 36885 multiletter control sequences out of 15000+600000
  511886 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,117p,410b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,15n,117p,410b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/tex
@@ -831,7 +831,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb>
-Output written on assignc3.pdf (2 pages, 199185 bytes).
+Output written on assignc3.pdf (2 pages, 198713 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
