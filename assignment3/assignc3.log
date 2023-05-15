@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  11 MAY 2023 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  15 MAY 2023 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,8 +792,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Missing character: There is no / in font nullfont!
 Missing character: There is no / in font nullfont!
-(./graph/graph1.txt)
-Overfull \hbox (65.89526pt too wide) in paragraph at lines 137--138
+(./figs/graph1.txt)
+Overfull \hbox (37.44254pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
@@ -801,13 +801,44 @@ Overfull \hbox (65.89526pt too wide) in paragraph at lines 137--138
 
 
 ] (./tables/table2.txt)
-(./tables/table2.txt) (./tables/table3.txt) (./tables/table3.txt) [2]
+(./tables/table2.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+(./tables/table4.txt) (./tables/table4.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+(./tables/table5.txt) (./tables/table5.txt) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+(./tables/table6.txt) (./tables/table6.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+(./tables/table7.txt) (./tables/table7.txt) (./tables/table7.txt)
+(./tables/table7.txt) (./tables/table7.txt) (./tables/table7.txt) [3]
 (./assignc3.aux) ) 
 Here is how much of TeX's memory you used:
- 19055 strings out of 478287
- 370017 string characters out of 5849289
- 641690 words of memory out of 5000000
- 36885 multiletter control sequences out of 15000+600000
+ 19084 strings out of 478287
+ 370528 string characters out of 5849289
+ 656690 words of memory out of 5000000
+ 36891 multiletter control sequences out of 15000+600000
  511886 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,117p,410b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -829,12 +860,13 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-8a.pfb>
-Output written on assignc3.pdf (2 pages, 198713 bytes).
+/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb>
+Output written on assignc3.pdf (3 pages, 213555 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

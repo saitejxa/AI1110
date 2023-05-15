@@ -133,7 +133,7 @@ Let $ Y \in \cbrak{1,2,3,4,5,6} $ denote the number obtained from a die throw.
 \begin{figure}[!ht]
         \centering
 \begin{tikzpicture}[->, >= stealth, shorten >=2pt , line width =0.5 pt, node distance =2 cm]//
-        \input{graph/graph1.txt}  
+        \input{figs/graph1.txt}  
         \end{tikzpicture}
         \caption{Graph of Markov Chain}
         \label{fig: markov_chain}
@@ -195,16 +195,82 @@ Let $ Y \in \cbrak{1,2,3,4,5,6} $ denote the number obtained from a die throw.
         \vdots \\
         \vec{Q_n} &= \vec{P}^{n} \vec{Q_0}
     \end{align}
-\textbf{Limiting Probabilities of States}
-    These can can be approximately calculated by taking large value of n,
-    \begin{align}
-       \lim_{n \to \infty}  \vec{Q_n} &= 
-       \myvec{\input{tables/table3.txt}} 
-    \end{align}
+\section{Eigen Decomposition}    
+ Now to find the eigen values, let $\lambda$  be the eigen value for the transition matrix P\\
+ \begin{align}
+ \implies   \mid P-\lambda {I_4} \mid &= 0  
+ \end{align}
+ \begin{align}
+ \myvec{\input{tables/table4.txt}} &= 0
+ \end{align}
+ \begin{align}
+ \implies (\frac{2}{6} - \lambda)(-\lambda)(1 - \lambda^2) = 0
+ \end{align}
+ \begin{align}
+ \implies \lambda = \frac{2}{6}, 0 , 1 , 1 
+ \end{align}
+ \begin{center}    
+$ \therefore $ eigen values\\
+\end{center}
+Now, finding the eigen vectors, say X\\
+\begin{align}
+\vec{X} &= \myvec{w \\ x \\ y \\ z} 
+\end{align}
+\begin{align}
+\implies (P - \lambda I)X &= 0
+\end{align}
+\begin{enumerate}
+\item $\lambda = \frac{2}{6}$
+\begin{align}
+\vec{X} &= \myvec{\frac{-2}{3}\\[4pt] \frac{-4}{3}\\[4pt] 1\\[4pt] 1}
+\end{align}
+\item $\lambda = 0$
+\begin{align}
+\vec{X} &= \myvec{0 \\[2pt] -2\\[2pt] 1\\ 1}
+\end{align}
+\item $\lambda = 1$
+\begin{align}
+\vec{X} &= \myvec{0 \\ 0 \\ 1 \\ 0} 
+\myvec{0 \\ 0 \\ 0 \\ 1}\\
+\end{align}
+\end{enumerate}
+Now, forming a eigenvector matrix\\
+\begin{align}
+\vec{S} &= \myvec{\input{tables/table5.txt}}
+\end{align}
+Now, we can write \\
+\begin{align}
+P &= SDS^{-1}
+\end{align}
+Where D is eigenvalue matrix,\\
+\begin{align}
+\vec{D} &= \myvec{\input{tables/table6.txt}}
+\end{align}
+To, find\\
+\begin{align}
+\lim_{n \to \infty} Q_{n} 
+\end{align}
+We know,
+\begin{align}
+Q_n &= P^{n}Q_0
+\end{align}
+and
+\begin{align}
+P^{n} &= (SDS^{-1})(SDS^{-1}) \dots (SDS^{-1})\\
+\implies P^{n} &= SD^{n}S^{-1}\\
+\implies \lim_{n \to \infty}P^{n} &= \lim_{n \to \infty}SD^{n}S^{-1}
+\end{align}
+Now,
+\begin{align}
+\vec{\lim_{n \to \infty}D^{n}} &= \myvec{\input{tables/table7.txt}}\\ 
+\implies \vec{\lim_{n \to \infty}SD^{n}S^{-1}} &= \myvec{\input{tables/table7.txt}} = \vec{P^{n}}\\
+\implies \vec{Q_n} &= \myvec{\input{tables/table7.txt}}\vec{Q_0}\\
+\implies \vec{Q_n} &= \myvec{0 \\ 0 \\ 0 \\ 0} 
+\end{align}
 \textbf{Required Conditional Probability}
     Probability of the coin showing tails, given that at least one die shows a 3,
     \begin{align}
-       \lim_{n \to \infty} \prt{3}{n} = 0.5
+       \lim_{n \to \infty} \prt{3}{n} = 0
     \end{align}
     
 \end{document}
